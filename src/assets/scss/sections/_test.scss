@@ -1,0 +1,38 @@
+.test {
+  background-image: linear-gradient(90deg, #a93cac 10.19%, #67005f 93.13%);
+
+  @include mq(tablet) {
+    background-image: url('../images/testImg/tabletBg.svg');
+    background-repeat: no-repeat;
+    background-size: auto 697px;
+    background-position: center;
+  }
+
+  @include mq(desktop) {
+    background-color: rgb(247 246 244);
+    background-image: url('../images/testImg/desktopBg.svg'),
+      linear-gradient(178deg, #67005f 8.19%, #a93cac 99.13%);
+    background-repeat: no-repeat;
+    background-size: auto 709px, 50%;
+    background-position: center, left top;
+  }
+
+  &__mobile-bg-img {
+    background-image: url('../images/testImg/mobileBg.svg');
+    background-size: contain;
+    background-position: left -29px center;
+    background-repeat: no-repeat;
+  }
+
+  &__subtitle-list {
+    &:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/testImg/arrow.svg');
+      position: absolute;
+      left: -28px;
+      top: -2px;
+    }
+  }
+}

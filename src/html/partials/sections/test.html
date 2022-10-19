@@ -1,0 +1,41 @@
+{% set section = test %}
+<section class="{{section.id}} pt-5 pb-[238px] md:pb-[100px] xl:py-10">
+  <div class="test__gradient container">
+    <div class="md:max-w-[422px] xl:max-w-[666px]">
+      <svg class="mb-4 md:mb-10 md:h-[33px] md:w-[128px]" width="93" height="24">
+        <use href="./assets/images/sprite.svg#icon-goiteens-logo" />
+      </svg>
+
+      <ul class="mb-14 grid gap-3 pl-7 text-accent md:mb-10 xl:mb-[64px]">
+        {% for title in section.subtitleList %}
+        <li class="test__subtitle-list relative text-[12px] leading-[1.25] last:uppercase">
+          {{title}}
+        </li>
+        {% endfor %}
+      </ul>
+
+      <h1
+        class="mb-5 text-[20px] font-bold leading-[1.2] text-accent md:max-w-[336px] md:text-[24px] xl:mb-7 xl:max-w-[666px] xl:text-[28px]"
+      >
+        {{section.title}}
+      </h1>
+
+      <p
+        class="mb-8 text-[16px] font-medium leading-[1.25] text-white md:mb-6 md:text-[18px] xl:mb-8 xl:max-w-[584px] xl:text-[24px]"
+      >
+        {{section.description}}
+      </p>
+
+      <button class="btn mb-5 uppercase md:mb-6 xl:mb-4" data-modal-open type="button">
+        {{section.btn}}
+      </button>
+
+      <p
+        class="mb-1 text-[16px] font-medium leading-[1.25] text-white md:mb-6 md:max-w-[257px] md:font-normal"
+      >
+        {{section.conclusion}}
+      </p>
+    </div>
+  </div>
+</section>
+<div class="test__mobile-bg-img mx-auto mt-[-238px] mb-10 h-[332px] w-[320px] md:hidden"></div>
