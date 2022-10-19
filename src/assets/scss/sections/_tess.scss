@@ -1,0 +1,15 @@
+.tess {
+  // padding: 50px 40px;
+  background-image: url('../images/what/wave.svg'), url('../images/what/icon2.svg'),
+    linear-gradient(178deg, #67005f 8.19%, #a93cac 99.13%);
+  // background-color: green;
+
+  // background-image: url('../images/what/wave.svg');
+  background-repeat: no-repeat;
+  // background-position: bottom right, top left;
+  background-position: bottom, top;
+
+  background-size: contain;
+  height: 516px;
+  // fill: rgb(247 246 244);
+}
