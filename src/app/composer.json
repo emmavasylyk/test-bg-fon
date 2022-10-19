@@ -1,0 +1,20 @@
+{
+  "name": "bagdasar/app",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "components\\": "components"
+    }
+  },
+  "authors": [
+    {
+      "name": "Bagdasar Ovsepyan",
+      "email": "bagdasar@ovsepyan.com.ua"
+    }
+  ]
+}

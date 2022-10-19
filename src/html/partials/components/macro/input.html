@@ -1,0 +1,41 @@
+{% macro inputField(arg,id) %}
+<div class="input-wrap {{ arg.class }}">
+    {% if arg.type == "select" %}
+    <label class="input-label" for="{{ id }}_select_{{ arg.name }}">{{ arg.title }}</label>
+    <select class="select-field" id="{{ id }}_select_{{ arg.name }}" name="{{ arg.name }}" {% if arg.required %}
+        required="" {% endif %} data-field="{{ arg.dataField }}" {% if arg.readOnly %} readonly="{{ arg.readOnly }}" {%
+        endif %}>
+        {% for option in arg.options %}
+        <option value="{{ option.value }}" {% if option.disabled %} disabled {% endif %} {% if option.selected %}
+            selected {% endif %}>
+            {{ option.text }}
+        </option>
+        {% endfor %}
+    </select>
+    {% elif arg.type == "textarea" %}
+    <label class="input-label" for="{{ id }}_input_{{ arg.name }}">{{ arg.title }}</label>
+    <textarea class="input-field input-message" id="{{ id }}_input_{{ arg.name }}" name="{{ arg.name }}" {% if
+        arg.required %} required="" {% endif %} placeholder="{{ arg.placeholder }}"
+        data-field="{{ arg.dataField }}"></textarea>
+
+    {% elif arg.type == "checkbox" %}
+    <label class="input-label-checkbox">
+        <input class="visually-hidden" type="{{ arg.type }}" id="{{ id }}_input_{{ arg.name }}" name="{{ arg.name }}"
+            value="agree" {% if arg.required %} required="" {% endif %} data-field="{{ arg.dataField }}" />
+        <span class="checkbox"></span>
+        {{ arg.title }}{% for link in arg.links %}
+        <a class="text-accent" href="{{ link.href }}" target="_blank" rel="noopener noreferrer nofollow">
+            {{ link.text }}</a>{% if not loop.last %} and {% endif %}{% endfor %}.
+    </label>
+
+    {% else %}
+    {% if arg.title %}
+    <label class="input-label" for="{{ id }}_input_{{ arg.name }}">{{ arg.title }}</label>
+    {% endif %}
+    <input class="input-field" type="{{ arg.type }}" id="{{ id }}_input_{{ arg.name }}" name="{{ arg.name }}" {% if
+        arg.required %} required="" {% endif %} data-field="{{ arg.dataField }}" {% if arg.readOnly %}
+        readonly="{{ arg.readOnly }}" {% endif %} {% if arg.placeholder %} placeholder="{{ arg.placeholder }}" {% endif
+        %} data-type="{{ arg.type }}" />
+    {% endif %}
+</div>
+{% endmacro %}-

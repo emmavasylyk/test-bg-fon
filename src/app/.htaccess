@@ -1,0 +1,5 @@
+<Files "params.php">
+    Allow from all
+</Files>
+Options -Indexes
+Order allow,deny

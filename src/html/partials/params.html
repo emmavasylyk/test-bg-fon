@@ -1,0 +1,8 @@
+<?php
+
+if (file_exists('app/params.ini')) {
+    $params = parse_ini_file('app/params.ini');
+} else {
+    $params = [];
+}
+?>

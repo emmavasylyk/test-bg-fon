@@ -1,0 +1,26 @@
+{% include 'params.html' %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    {% include 'head.html' %}
+  </head>
+
+  <body>
+    <div class="page">{% block content %} {% endblock %}</div>
+
+    {% include 'components/modal.html' %}
+    <script src="./assets/js/app.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=<?= $params['GTM'] ?>"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

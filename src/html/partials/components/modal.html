@@ -1,0 +1,21 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal bg-white text-black-light">
+    <button
+      class="modal-close-btn"
+      type="button"
+      data-modal-close
+      aria-label="{{modal.btn_close_aria}}"
+    >
+      <svg class="modal-btn-close-svg" width="30" height="30" aria-label="{{modal.btn_close_aria}}">
+        <use href="./assets/images/sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+
+    <svg class="logo" width="74" height="24" aria-label="{{modal.logo_aria}}">
+      <use href="./assets/images/sprite.svg#icon-goit-logo"></use>
+    </svg>
+
+    {% import './macro/step.html' as service %} {{service.stepDiv(form.steps, form.ID)}} {% include
+    './formFields.njk' %}
+  </div>
+</div>

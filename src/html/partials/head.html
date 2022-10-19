@@ -1,0 +1,39 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
+<meta name="robots" content="index, follow" />
+<meta name="google" content="notranslate" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+{% include 'ogp.html' %}
+
+<title>{{ page.title }}</title>
+
+<link rel="canonical" href="{{ page.canonical }}" />
+{% include 'favicon.html' %}
+<link rel="preload" as="style" href="./assets/css/style.css" />
+<link rel="preload" as="script" href="./assets/js/app.js" />
+<link rel="stylesheet" href="./assets/css/style.css" />
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','<?= $params['GTM'] ?>');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- PHP Vars -->
+<script>
+  window.locale = '{{ page.lang }}';
+  window.productName = '<?= $params['PRODUCT_NAME'] ?? NULL?>';
+  window.productId = '<?= $params['PRODUCT_ID'] ?? NULL?>';
+  window.leadFormat = '<?= $params['CAPI_LEAD_FORMAT'] ?? NULL ?>';
+  window.leelooHash = '<?= $params['LEELOO_HASH'] ?? NULL ?>';
+  window.telegramBackendUrl = '<?= $params['TELEGRAM_BACKEND_URL'] ?? NULL ?>';
+  window.telegramBot = '<?= $params['TELEGRAM_BOT'] ?? NULL ?>';
+</script>
+<!-- End PHP Vars -->

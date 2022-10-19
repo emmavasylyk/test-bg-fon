@@ -1,0 +1,63 @@
+{
+  "inputs": [
+    {
+      "title": "Name",
+      "type": "text",
+      "name": "name",
+      "placeholder": "Tom Bradley",
+      "dataField": "name",
+      "required": true
+    },
+    {
+      "title": "Phone",
+      "type": "tel",
+      "name": "phone",
+      "placeholder": "",
+      "dataField": "phone",
+      "required": true
+    },
+    {
+      "title": "Email",
+      "type": "email",
+      "name": "email",
+      "placeholder": "@gmail.com",
+      "dataField": "email",
+      "required": true
+    },
+    {
+      "title": "Your Question",
+      "type": "textarea",
+      "name": "message",
+      "placeholder": "Ask your question",
+      "dataField": "message"
+    },
+    {
+      "title": "Country",
+      "type": "text",
+      "name": "country",
+      "placeholder": "",
+      "dataField": "select",
+      "class": "input-wrap-half"
+    },
+    {
+      "title": "Zipcode",
+      "type": "text",
+      "name": "zipCode",
+      "placeholder": "00000",
+      "dataField": "zip",
+      "class": "input-wrap-half"
+    },
+    {
+      "title": "By submitting this form, you agree to receive admissions and marketing communications via email or automated text, and you agree to our ",
+      "type": "checkbox",
+      "name": "agree",
+      "dataField": "checkbox",
+      "required": true,
+      "class": "input-wrap-checkbox",
+      "links": [
+        { "text": "Privacy Policy", "href": "policy/" },
+        { "text": "Site Terms", "href": "terms/" }
+      ]
+    }
+  ]
+}

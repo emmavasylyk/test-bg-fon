@@ -1,0 +1,50 @@
+{
+  "page": {
+    "lang": "uk",
+    "title": "title",
+    "description": "description",
+    "canonical": "link"
+  },
+  "header": {
+    "id": "header"
+  },
+  "footer": {
+    "id": "footer"
+  },
+  "modal": {
+    "btn_close_aria": "кнопка закриття модального вікна",
+    "logo_aria": "Логотип"
+  },
+  "form": {
+    "ID": "leadForm",
+    "title": "Реєстрація",
+    "steps": ["1", "2", "Готово"],
+    "inputs": [
+      {
+        "title": "Імʼя *",
+        "type": "text",
+        "name": "name",
+        "placeholder": "",
+        "dataField": "name",
+        "required": true
+      },
+      {
+        "title": "Телефон *",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "",
+        "dataField": "phone",
+        "required": true
+      },
+      {
+        "title": "Пошта *",
+        "type": "email",
+        "name": "email",
+        "placeholder": "@gmail.com",
+        "dataField": "email",
+        "required": true
+      }
+    ],
+    "btnSubmit": "Зареєструватися"
+  }
+}

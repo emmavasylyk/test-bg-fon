@@ -1,0 +1,101 @@
+[
+  {
+    "key": "loadingMessage",
+    "dict": {
+      "en": "Please wait a few seconds... almost got your request",
+      "ru": "Подождите несколько секунд... почти получили Вашу заявку",
+      "uk": "Зачекайте декілька секунд… майже отримали Вашу заявку",
+      "pl": "Proszę czekać chwilę... niedługo otrzymaliśmy Twoją zgłoszenie",
+      "es": "Por favor espere unos segundos... casi obtuvimos su solicitud",
+      "ro": "Vă rugăm așteptați câteva secunde... aproximativ ați primit cererea dvs."
+    }
+  },
+  {
+    "key": "successMessage",
+    "dict": {
+      "en": "Got your request",
+      "ru": "Получили заявку",
+      "uk": "Отримали заявку",
+      "pl": "Otrzymaliśmy Twoją zgłoszenie",
+      "es": "Casi obtuvimos su solicitud",
+      "ro": "Ați primit cererea dvs."
+    }
+  },
+  {
+    "key": "errorMessage",
+    "dict": {
+      "en": "Error, something went wrong! Try again later.",
+      "ru": "Ошибка, что-то пошло не так! Попробуйте позже.",
+      "uk": "Помилка, щось пішло не так! Спробуйте пізніше.",
+      "pl": "Błąd, coś poszło nie tak! Spróbuj ponownie później.",
+      "es": "Error, algo salió mal! Inténtalo de nuevo más tarde.",
+      "ro": "Eroare, ceva nu a mers bine! Încearcă mai târziu."
+    }
+  },
+  {
+    "key": "thanks",
+    "dict": {
+      "en": "Thank You!",
+      "ru": "Спасибо!",
+      "uk": "Дякуємо!",
+      "pl": "Dziękujemy!",
+      "es": "¡Gracias!",
+      "ro": "Multumim!"
+    }
+  },
+  {
+    "key": "reply",
+    "dict": {
+      "en": "We will reply to you as soon as possible.",
+      "ru": "Мы ответим Вам как можно скорее.",
+      "uk": "Ми відповімо Вам найближчим часом.",
+      "pl": "Nasz zespół odpowie na Twoje zapytanie jak najszybciej.",
+      "es": "Nosotros responderemos a tu solicitud lo antes posible.",
+      "ro": "Vom răspunde la tine cât mai curând posibil."
+    }
+  },
+  {
+    "key": "tryAgain",
+    "dict": {
+      "en": "Please try again later.",
+      "ru": "Попробуйте позже.",
+      "uk": "Спробуйте пізніше.",
+      "pl": "Spróbuj ponownie później.",
+      "es": "Inténtalo de nuevo más tarde.",
+      "ro": "Încearcă mai târziu."
+    }
+  },
+  {
+    "key": "error",
+    "dict": {
+      "en": "Error!",
+      "ru": "Ошибка!",
+      "uk": "Помилка!",
+      "pl": "Błąd!",
+      "es": "Error!",
+      "ro": "Eroare!"
+    }
+  },
+  {
+    "key": "emailNotExists",
+    "dict": {
+      "en": "Email does not exist",
+      "ru": "Email не существует",
+      "uk": "Email не існує",
+      "pl": "Email nie istnieje",
+      "es": "Email no existe",
+      "ro": "Email nu există"
+    }
+  },
+  {
+    "key": "telegramBackendMessage",
+    "dict": {
+      "en": "There is only one step left! Go to telegram 👇",
+      "ru": "Остался всего один шаг! Перейдите в телеграм 👇",
+      "uk": "Залишився всього один крок! Перейдіть в телеграм 👇",
+      "pl": "Pozostał tylko jeden krok! Przejdź do telegramu 👇",
+      "es": "Solo queda un paso! Ve a telegrama 👇",
+      "ro": "Este doar un pas! Mergeți la telegrama 👇"
+    }
+  }
+]

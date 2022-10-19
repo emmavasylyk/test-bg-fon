@@ -1,0 +1,63 @@
+.input-wrap {
+  @apply relative w-full font-medium;
+}
+
+.input-wrap-half {
+  @apply w-[calc((100%_-_1.5rem)/2)];
+
+  & + .input-wrap-checkbox {
+    @apply mt-6;
+  }
+}
+
+.input-label {
+  @apply mb-1 inline-block;
+}
+
+.input-message {
+  @apply resize-none;
+}
+
+input[data-type='text'].input-field,
+input[type='email'].input-field,
+input[type='tel'].input-field {
+  @apply h-10 py-2 px-4;
+}
+
+input[type='tel'].input-field {
+  @apply pl-14 pr-2;
+}
+
+.input-field {
+  @apply w-full rounded-2xl border border-gray-400 bg-transparent py-2 px-4;
+
+  &::placeholder {
+    @apply text-gray-400;
+  }
+
+  &:focus {
+    @apply border-accent outline-none;
+  }
+
+  &.is-invalid {
+    @apply border-2 border-red-600;
+  }
+}
+
+.checkbox {
+  @apply absolute left-0 top-0 inline-block h-6 w-6 rounded-full border border-white bg-contain bg-center bg-no-repeat;
+
+  [type='checkbox']:checked + & {
+    @apply bg-check;
+  }
+}
+
+.input-label-checkbox {
+  @apply relative inline-block cursor-pointer pl-10;
+}
+
+/*! purgecss start ignore */
+.just-validate-error-label {
+  @apply absolute bottom-0 left-0 mt-1 translate-y-[calc(100%_+_4px)] text-sm font-medium;
+}
+/*! purgecss end ignore */

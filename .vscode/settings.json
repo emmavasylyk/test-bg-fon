@@ -1,0 +1,21 @@
+{
+  // htmlhint
+  "htmlhint.enable": true,
+  // lint
+  "scss.lint.duplicateProperties": "warning",
+  "css.lint.duplicateProperties": "warning",
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  // editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // files
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.njk": "html"
+  }
+}

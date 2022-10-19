@@ -1,0 +1,100 @@
+/*! purgecss start ignore */
+// Leeloo div styles
+.leeloo {
+  @apply mx-auto mt-5 overflow-hidden;
+
+  .leeloo-lgt-form-wrapper {
+    @apply block;
+  }
+
+  iframe {
+    @apply mx-auto block;
+  }
+}
+/*! purgecss end ignore */
+
+// Progress bar styles
+.progress-bar {
+  @apply relative h-[10px] w-full rounded-2xl;
+
+  & .color {
+    @apply absolute h-[10px] w-0 rounded-2xl bg-accent;
+    animation: progress 4s infinite linear;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.scroll-hidden {
+  @apply overflow-hidden;
+}
+
+.steps-bar {
+  @apply my-4 flex justify-between p-0;
+
+  & .active:before {
+    @apply border-accent bg-white;
+  }
+
+  & > .item {
+    @apply relative overflow-visible whitespace-nowrap border-b-4 border-accent pb-5 text-center font-semibold text-accent;
+    flex: 2;
+
+    &:first-child,
+    &:last-child {
+      @apply flex-1;
+    }
+
+    &:first-child {
+      @apply pl-3 text-left;
+    }
+
+    &:last-child {
+      @apply text-right;
+    }
+
+    &:before {
+      @apply absolute left-[calc(50%_-_15px)] -bottom-4 block h-[30px] w-[30px] rounded-full border-4 border-accent bg-white duration-300 ease-linear content-[""];
+    }
+
+    &:first-child:before {
+      @apply left-0;
+    }
+
+    &:last-child:before {
+      @apply right-0 left-auto;
+    }
+
+    &.active:before {
+      @apply scale-[1.33];
+    }
+
+    span {
+      @apply duration-300 ease-linear;
+    }
+
+    &:not(.active) span {
+      @apply opacity-0;
+    }
+  }
+}
+
+.form-btn {
+  @apply mt-10 w-full rounded-2xl border-2 border-transparent bg-accent p-6 text-center font-bold text-white outline-none duration-300 ease-linear hover:border-accent hover:bg-transparent hover:text-accent focus:border-accent focus:bg-transparent focus:text-accent;
+}
