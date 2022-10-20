@@ -19,7 +19,7 @@ module.exports = {
     },
     // SHADOW
     boxShadow: {
-      orange: '2px 8px 29px rgba(240, 127, 46, 0.2)', // class="shadow-orange"
+      orange: '3px 8px 29px rgba(254, 200, 48, 0.3)', // class="shadow-orange"
     },
     // THEME
     extend: {
@@ -41,9 +41,9 @@ module.exports = {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
           dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
         },
-        accent: '#FF6C00', // class="bg-accent text-accent border-accent"
+        accent: '#FEC830', // class="bg-accent text-accent border-accent"
         primary: '#f1f1f1',
-        second: '#f2f2f2',
+        second: '#67005F',
       },
       // CONTAINER
       container: {

@@ -1,14 +1,10 @@
 .cool {
-  // background-image: url(../images/cool/snakeBg.svg),
-  //   linear-gradient(177deg, rgb(247 246 244) 0%, rgb(247 246 244) 100%),
-  //   linear-gradient(90deg, #a93cac 52.19%, #67005f 54.13%);
-  background-image: url(../images/cool/snakeBg.svg),
-    linear-gradient(177deg, rgb(247, 246, 244) 0%, rgb(247, 246, 244) 100%),
-    linear-gradient(90deg, #a93cac 10.19%, #67005f 101.13%);
-  background-color: rgb(247 246 244);
-  background-position: center, center, top 41% center;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-size: auto, 1440px 379px, 1440px 328px;
-  padding: 115px;
-  // linear-gradient(90deg, #a93cac 10.19%, #67005f 93.13%)
+  background-image: url(../images/cool/line1.svg), url(../images/cool/line2.svg),
+    linear-gradient(270deg, #a93cac -0.58%, #67005f 104.43%);
+  // linear-gradient(178deg, #67005f 8.19%, #a93cac 99.13%);
+  background-color: #f7f6f4;
+  background-position: top -4% left, bottom -4% left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 104px 0px 109px;
 }

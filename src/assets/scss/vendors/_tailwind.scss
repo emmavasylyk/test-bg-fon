@@ -23,7 +23,7 @@ body {
 }
 
 .btn {
-  @apply duration-300;
+  @apply rounded bg-accent py-[22px] px-[98px] text-[18px] font-semibold leading-5 text-second duration-300 hover:shadow-orange focus:shadow-orange;
 }
 
 .visually-hidden {
